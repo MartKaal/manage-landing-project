@@ -1,0 +1,166 @@
+/****** COLORS ******/
+/***** TYPOGRAPHY *****/
+/***** RESET *****/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam", sans-serif;
+  line-height: 1.3;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Be Vietnam", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #fafafa;
+  text-decoration: none;
+  display: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-block: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-e {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-jc-e {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: (63, 9375em)) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.button {
+  display: block;
+  padding: 0.875rem 1.875rem;
+  border: none;
+  background-color: #f25f3a;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #ffefeb;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.header {
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.header__logo img {
+  width: 7rem;
+  height: auto;
+}
+
+.header__hamburger span {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 4px;
+  background-color: #242d52;
+}
+
+.header__hamburger span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.header__main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__main-nav li:not(:last-child) {
+  margin-right: 2.8rem;
+}
+
+.header__main-nav a {
+  font-size: 0.9rem;
+  color: #242d52;
+  font-weight: 700;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.header__main-nav a:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 40em) {
+  .header__logo img {
+    width: 11rem;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

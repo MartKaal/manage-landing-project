@@ -1,0 +1,57 @@
+.header {
+	position: relative;
+	margin-top: 2.5rem;
+
+	&__logo {
+		img {
+			width: 7rem;
+			height: auto;
+		}
+	}
+
+	&__hamburger {
+
+		span {
+			display: block;
+			position: relative;
+			width: 25px;
+			height: 4px;
+			background-color: $DarkBlue;
+		}
+
+		span:not(:last-child) {
+			margin-bottom: 3px;
+		}
+
+	}
+
+	&__main-nav {
+		display: flex;
+
+		li:not(:last-child) {
+			margin-right: 2.8rem;
+		}
+
+		a {
+			font-size: 0.9rem;
+			color: $DarkBlue;
+			font-weight: $font-bold;
+			transition: opacity 250ms ease-in-out;
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+		}
+		
+	}
+
+	@include breakpoint-up(medium) {
+		&__logo {
+			img {
+				width: 11rem;
+				height: auto;
+			}
+		}
+	}
+}
