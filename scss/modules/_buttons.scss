@@ -1,0 +1,15 @@
+.button {
+	padding: 0.875rem 1.875rem;
+	border: none;
+	background-color: $BrightRed;
+	border-radius: 30px;
+	cursor: pointer;
+	color:  $VeryPaleRed;
+	font-size: 0.8125rem;
+	font-weight: $font-bold;
+	transition: opacity 250ms ease-in-out;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
