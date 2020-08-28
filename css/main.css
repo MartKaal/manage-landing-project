@@ -294,6 +294,19 @@ a {
   max-width: 100%;
 }
 
+.hero__image::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../images/bg-tablet-pattern.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -26rem;
+  right: -22rem;
+  width: 814px;
+  height: 814px;
+  z-index: -1;
+}
+
 .hero__content {
   max-width: 43.75rem;
   width: 100%;
