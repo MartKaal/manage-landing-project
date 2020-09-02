@@ -41,9 +41,14 @@ h1 {
 	font-size: calc( 2rem + 16 * (100vw - 320px) / (960 - 320) );
 }
 
+h2 {
+	font-size: calc( 1.75rem + 16 * (100vw - 320px) / (960 - 320) );
+}
+
 p {
 	font-size: 1rem;
 	color: $DarkGrayisBlue;
+	line-height: 1.6;
 }
 
 a {
@@ -58,6 +63,11 @@ a {
 	margin: 0 auto;
 	padding: 0 1.5rem;
 	overflow-block: auto;
+}
+
+.container-full {
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 @include breakpoint-down(large) {

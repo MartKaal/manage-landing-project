@@ -8,6 +8,8 @@
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<title>Frontend Mentor | Manage landing page</title>
 </head>
@@ -63,61 +65,94 @@
 			</div>
 
 		</section>
+		<section class="about flex">
+			<div class="about__intro">
+				<h2>What’s different about Manage?</h2>
+				<p>Manage provides all the functionality your team needs, without
+					the complexity. Our software is tailor-made for modern digital
+					product teams.</p>
+			</div>
+			<div class="about__bullet">
+				<div class="about__bullet__action">
+					<span>01</span>
+					<h4>Track company-wide progress</h4>
+					<p>See how your day-to-day tasks fit into the wider vision. Go from
+						tracking progress at the milestone level all the way done to the
+						smallest of details. Never lose sight of the bigger picture again.</p>
+				</div>
+				<div class="about__bullet__action">
+					<span>02</span>
+					<h4>Advanced built-in reports</h4>
+					<p> Set internal delivery estimates and track progress toward company
+						goals. Our customisable dashboard helps you build out the reports
+						you need to keep key stakeholders informed.</p>
+				</div>
+				<div class="about__bullet__action">
+					<span>03</span>
+					<h4>Everything you need in one place</h4>
+					<p> Stop jumping from one service to another to communicate, store files,
+						track tasks and share documents. Manage offers an all-in-one team
+						productivity solution.</p>
+				</div>
+			</div>
+		</section>
+
 	</div>
+	<section class="testemonials">
+		<h2>What they've said</h2>
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img src="./images/avatar-anisha.png" alt="Ali Bravo">
+					<div class="swiper-content">
+						<h4>Anisha Li</h4>
+						<p>“Manage has supercharged our team’s workflow. The ability to maintain
+							visibility on larger milestones at all times keeps everyone motivated.”</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="./images/avatar-ali.png" alt="Ali Bravo">
+					<div class="swiper-content">
+						<h4>Ali Bravo</h4>
+						<p>“We have been able to cancel so many other subscriptions since using
+							Manage. There is no more cross-channel confusion and everyone is much
+							more focused.”</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="./images/avatar-richard.png" alt="Ali Bravo">
+					<div class="swiper-content">
+						<h4>Richard Watts</h4>
+						<p>“Manage allows us to provide structure and process. It keeps us organized
+							and focused. I can’t stop recommending them to everyone I talk to!”</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="./images/avatar-shanai.png" alt="Ali Bravo">
+					<div class="swiper-content">
+						<h4>Shanai Gough</h4>
+						<p>“Their software allows us to track, manage and collaborate on our projects
+							from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<!-- Pricing
-	Product
-	About Us
-	Careers
-	Community
 
-	Get Started
+	<!--
 
-	Bring everyone together to build better products.
-
-	Manage makes it simple for software teams to plan day-to-day
-	tasks while keeping the larger team goals in view.
-
-	Get Started
-
-	What’s different about Manage?
-
-	Manage provides all the functionality your team needs, without
-	the complexity. Our software is tailor-made for modern digital
-	product teams.
-
-	01
-	Track company-wide progress
-	See how your day-to-day tasks fit into the wider vision. Go from
-	tracking progress at the milestone level all the way done to the
-	smallest of details. Never lose sight of the bigger picture again.
-
-	02
-	Advanced built-in reports
-	Set internal delivery estimates and track progress toward company
-	goals. Our customisable dashboard helps you build out the reports
-	you need to keep key stakeholders informed.
-
-	03
-	Everything you need in one place
-	Stop jumping from one service to another to communicate, store files,
-	track tasks and share documents. Manage offers an all-in-one team
-	productivity solution.
 
 	What they’ve said
 
-	Anisha Li
-	“Manage has supercharged our team’s workflow. The ability to maintain
-	visibility on larger milestones at all times keeps everyone motivated.”
+	
+	
 
-	Ali Bravo
-	“We have been able to cancel so many other subscriptions since using
-	Manage. There is no more cross-channel confusion and everyone is much
-	more focused.”
 
 	Richard Watts
-	“Manage allows us to provide structure and process. It keeps us organized
-	and focused. I can’t stop recommending them to everyone I talk to!”
+	
 
 	Shanai Gough
 	“Their software allows us to track, manage and collaborate on our projects
@@ -147,6 +182,8 @@
 		Coded by <a href="#">Your Name Here</a>.
 	</div> -->
 	<footer>
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="./js/main.js"></script>
 	</footer>
 </body>
