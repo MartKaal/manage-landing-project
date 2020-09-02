@@ -62,7 +62,6 @@ a {
 	max-width: 69.375rem;
 	margin: 0 auto;
 	padding: 0 1.5rem;
-	overflow-block: auto;
 }
 
 .container-full {
@@ -93,6 +92,10 @@ a {
 
 	&-ai-c {
 		align-items: center;
+	}
+
+	&-fl-col {
+		flex-flow: column;
 	}
 }
 

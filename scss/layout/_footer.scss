@@ -1,0 +1,127 @@
+.footer{
+	background-color: $VeryDarkBlue;
+	padding: 50px 0 30px;
+
+	@include breakpoint-up(large) {
+		padding: 60px 0 60px;
+	}
+
+	.container {
+		max-width: 525px;
+
+		@include breakpoint-up(large) {
+			display: grid;
+			grid-template-columns: 1fr 2fr 2fr;
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-areas: 
+			'logo menu newsletter'
+			'social menu copyright';
+			max-width: 1100px;
+			column-gap: 7rem;
+		}
+	}
+
+	&__logo {
+		order: 4;
+		margin-top: 3rem;
+
+		img {
+			height: 30px;
+
+			@include breakpoint-up(large) {
+				height: 25px;
+			}
+		}
+
+		@include breakpoint-up(large) {
+			grid-area: logo;
+			margin-top: 0;
+			align-self: flex-start;
+		}
+	}
+
+	&__social {
+		order: 3;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 3rem;
+
+		img {
+			width: 30px;
+			height: 30px;
+
+			@include breakpoint-up(large) {
+				height: 20px;
+				width: 20px;
+			}
+		}
+
+		@include breakpoint-up(large) {
+			grid-area: social;
+			margin-top: 0;
+			align-self: flex-end;
+		}
+	}
+
+	&__links {
+		order: 2;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 3rem;
+
+		a {
+			line-height: 2.25;
+			font-size: 0.9125rem;
+		}
+
+		@include breakpoint-up(large) {
+			grid-area: menu;
+			margin-top: 0;
+			justify-content: space-between;
+		}
+	}
+
+	&__newsletter {
+		order: 1;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		
+		input {
+			border: none;
+			height: 45px;
+			border-radius: 25px;
+			width: 75%;
+			padding-left: 1.3rem;
+
+			@include breakpoint-up(large) {
+				width: 200px;
+				margin-right: 0.4rem;
+			}
+		}
+
+		.button {
+			display: inline-block;
+		}
+
+		@include breakpoint-up(large) {
+			grid-area: newsletter;
+			justify-content: flex-end;
+		}
+	}
+
+	&__copyright {
+		order: 5;
+		margin-top: 3rem;
+		color: $DarkGrayisBlue;
+		font-size: 0.9rem;
+
+		@include breakpoint-up(large) {
+			order: 4;
+			grid-area: copyright;
+			text-align: right;
+		}
+	}
+}
