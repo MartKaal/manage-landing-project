@@ -65,6 +65,11 @@ a {
 	overflow-block: auto;
 }
 
+.container-full {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 @include breakpoint-down(large) {
 	.container {
 		max-width: 1100px;
